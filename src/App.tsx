@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { ChakraProvider, Box, Heading, Select, Text, Flex, Table, Thead, Tbody, Tr, Th, Td, Image, Input, Button } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import { ChakraProvider, Box, Heading, Select, Text, Flex, Input, Button } from '@chakra-ui/react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
 import BarChart from './components/BarChart';
 import PieChart from './components/PieChart';
@@ -126,7 +126,7 @@ const App = () => {
               <Heading as="h2" size="md" mb={3}>
                 Votos Apurados por {selecao === "Prefeitos" ? "Prefeito" : "Vereador"}
               </Heading>
-              <BarChart candidatos={candidatosFiltrados} selecao={selecao} options={{ plugins: { legend: { display: false } } }} />
+              <BarChart candidatos={candidatosFiltrados} selecao={selecao} }} />
             </Box>
             <Box width={['100%', '48%']} p={5} boxShadow="md" borderRadius="md">
               <Heading as="h2" size="md" mb={3}>

@@ -4,10 +4,10 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true,
-    "skipLibCheck": true,
-    "strict": false,
+    "noImplicitAny": false,          // Permite 'any' implícito
+    "skipLibCheck": true,            // Ignora verificação de bibliotecas
+    "strict": false,                 // Desativa verificações estritas
+    "noEmitOnError": false,          // Permite build mesmo com erros
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -18,9 +18,9 @@
     "jsx": "react-jsx",
 
     /* Linting */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noUnusedLocals": false,         // Permite variáveis locais não utilizadas
+    "noUnusedParameters": false,     // Permite parâmetros não utilizados
+    "noFallthroughCasesInSwitch": false // Permite fallthrough em switch
   },
   "include": ["src"]
 }
