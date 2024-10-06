@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     // Cria uma nova instância do WebSocket
-    socket = new WebSocket("ws://localhost:8000/ws");
+    socket = new WebSocket("wss://apipaudalho2024-k1xp4xzb.b4a.run/ws");
 
     socket.onopen = () => {
       console.log("Conexão WebSocket aberta");
